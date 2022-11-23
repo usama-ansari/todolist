@@ -1,0 +1,143 @@
+*{
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #393952;
+    color: white;
+}
+
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: #20203e;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+
+
+#new-task-submit{
+    color: pink;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content{
+    /* flex: 1 1 0%; */
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #20203e;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem ;
+}
+
+#tasks .task .content .text{
+     color: white;
+     font-size: 1.25rem;
+     width: 100%;
+     display: block;
+     transition: 0.4s;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+
+#tasks .task button{
+    cursor: pointer;
+    margin: 0 0.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+   background-color: aquamarine;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete{
+    background-color: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
